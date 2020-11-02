@@ -1,0 +1,13 @@
+<div *ngFor="let seminaire of tabOfObjectFromParent">
+    <h2> {{seminaire.name}} </h2>
+    <div>Date: {{seminaire.date}} </div>
+    <div>Time: {{seminaire.time}} </div>
+    <div>Donation: {{seminaire.donation}} </div>
+    <div>
+        <span>Address: {{seminaire.address.street}} </span>
+        <span class="pad-left"> {{seminaire.address.city}}, {{seminaire.address.country}} </span>
+    </div>
+    <div>
+        <button class="btn btn-primary" (click)="envoie()">Click Me!</button>
+    </div>
+</div>
